@@ -2,7 +2,7 @@ resource "azurerm_resource_group" "terraflow" {
   name     = "terraflow"
   location = "East US"
 }
-resource "azurerm_storage_account" "storageterra" {
+resource "azurerm_storage_account" "saterra" {
     name                     = "sandystorageterra987"
     resource_group_name      = azurerm_resource_group.terraflow.name
     location                 = azurerm_resource_group.terraflow.location
